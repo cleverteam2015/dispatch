@@ -1,0 +1,2 @@
+module MainEntitiesHelper
+end
