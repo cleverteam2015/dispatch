@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :business_units
+
+  resources :dealers
+
   resources :main_entities
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,0 +1,48 @@
+<%- model_class = BusinessUnit -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:short_name) %></th>
+      <th><%= model_class.human_attribute_name(:long_name) %></th>
+      <th><%= model_class.human_attribute_name(:creation_date) %></th>
+      <th><%= model_class.human_attribute_name(:status) %></th>
+      <th><%= model_class.human_attribute_name(:address) %></th>
+      <th><%= model_class.human_attribute_name(:phone) %></th>
+      <th><%= model_class.human_attribute_name(:parent_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @business_units.each do |business_unit| %>
+      <tr>
+        <td><%= link_to business_unit.id, business_unit_path(business_unit) %></td>
+        <td><%= business_unit.short_name %></td>
+        <td><%= business_unit.long_name %></td>
+        <td><%= business_unit.creation_date %></td>
+        <td><%= business_unit.status %></td>
+        <td><%= business_unit.address %></td>
+        <td><%= business_unit.phone %></td>
+        <td><%= getBUName(business_unit.parent_id) %></td>
+        <td><%=l business_unit.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_business_unit_path(business_unit), :class => 'btn btn-default btn-xs' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      business_unit_path(business_unit),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_business_unit_path,
+            :class => 'btn btn-primary' %>

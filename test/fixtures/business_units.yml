@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  short_name: MyString
+  long_name: MyString
+  creation_date: 2015-03-07
+  status: MyString
+  address: MyString
+  phone: MyString
+  parent_id: 1
+
+two:
+  short_name: MyString
+  long_name: MyString
+  creation_date: 2015-03-07
+  status: MyString
+  address: MyString
+  phone: MyString
+  parent_id: 1
