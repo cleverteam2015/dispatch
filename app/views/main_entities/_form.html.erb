@@ -1,0 +1,59 @@
+<%= form_for @main_entity, :html => { :class => "form-horizontal main_entity" } do |f| %>
+
+    <% if @main_entity.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@main_entity.errors.count, "error") %> prohibited this main_entity from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @main_entity.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@main_entity[:name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :main_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :main_name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@main_entity[:main_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :creation_date, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :creation_date, :class => 'form-control' %>
+    </div>
+    <%= error_span(@main_entity[:creation_date]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :status, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :status, :class => 'form-control' %>
+    </div>
+    <%= error_span(@main_entity[:status]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :address, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :address, :class => 'form-control' %>
+    </div>
+    <%= error_span(@main_entity[:address]) %>
+  </div>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            main_entities_path, :class => 'btn btn-default' %>
+
+<% end %>
