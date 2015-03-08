@@ -6650,3 +6650,2380 @@ Processing by BusinessUnitsController#index as HTML
   [1m[35mDealer Load (0.1ms)[0m  SELECT  "dealers".* FROM "dealers" WHERE "dealers"."id" = ? LIMIT 1  [["id", 1]]
   Rendered business_units/index.html.erb within layouts/application (2.6ms)
 Completed 200 OK in 128ms (Views: 127.5ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRoles (20150308050319)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "status" varchar, "created_by" varchar, "updated_by" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150308050319"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 13:30:45 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainEntitiesController#index as HTML
+  [1m[35mMainEntity Load (0.5ms)[0m  SELECT "main_entities".* FROM "main_entities"
+  Rendered main_entities/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 1790ms (Views: 1779.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/application-153936a8e3acf96b7fac0f288b871501.js?body=1" for ::1 at 2015-03-08 13:30:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 13:30:48 +0800
+
+
+Started GET "/settings" for ::1 at 2015-03-08 13:31:11 +0800
+
+ActionController::RoutingError (No route matches [GET] "/settings"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.9ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.5ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.8ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (60.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (120.4ms)
+
+
+Started GET "/settings" for ::1 at 2015-03-08 13:35:40 +0800
+
+ActionController::RoutingError (No route matches [GET] "/settings"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (49.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (97.2ms)
+
+
+Started GET "/settings" for ::1 at 2015-03-08 13:35:42 +0800
+
+ActionController::RoutingError (No route matches [GET] "/settings"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.1) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/joweedeleon/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.2ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/console.js within layouts/javascript (41.2ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/main.js within layouts/javascript (0.2ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/error_page.js within layouts/javascript (0.3ms)
+  Rendered /Users/joweedeleon/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.1/lib/web_console/templates/index.html (89.5ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:11:47 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 224ms (Views: 223.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:11:48 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:12:11 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[36mMainEntity Load (0.3ms)[0m  [1mSELECT "main_entities".* FROM "main_entities"[0m
+  Rendered main_entities/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 152ms (Views: 148.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:14:36 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 137ms (Views: 136.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:14:36 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:15:15 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 152ms (Views: 151.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:15 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:15:17 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 127ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:15:17 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:16:15 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 157ms (Views: 156.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:16:15 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:16:29 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[35mMainEntity Load (0.1ms)[0m  SELECT "main_entities".* FROM "main_entities"
+  Rendered main_entities/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 145ms (Views: 144.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:18:55 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 131ms (Views: 130.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:56 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:18:58 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 148ms (Views: 148.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:18:58 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:19:33 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[36mMainEntity Load (0.2ms)[0m  [1mSELECT "main_entities".* FROM "main_entities"[0m
+  Rendered main_entities/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 154ms (Views: 153.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:19:34 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[35mMainEntity Load (0.3ms)[0m  SELECT "main_entities".* FROM "main_entities"
+  Rendered main_entities/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 141ms (Views: 140.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:19:36 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[36mMainEntity Load (0.2ms)[0m  [1mSELECT "main_entities".* FROM "main_entities"[0m
+  Rendered main_entities/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:20:07 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[35mMainEntity Load (0.2ms)[0m  SELECT "main_entities".* FROM "main_entities"
+  Rendered main_entities/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 159ms (Views: 158.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:20:09 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 135ms (Views: 135.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:20:10 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 152ms (Views: 151.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:20:11 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 142ms (Views: 141.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:20:12 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:31:56 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 153ms (Views: 152.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:31:56 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:35:47 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 144ms (Views: 142.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:35:47 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:47:31 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 147ms (Views: 146.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:47:31 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:47:34 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[36mMainEntity Load (0.1ms)[0m  [1mSELECT "main_entities".* FROM "main_entities"[0m
+  Rendered main_entities/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 146ms (Views: 145.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:47:43 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 150ms (Views: 149.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:47:43 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:47:44 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:47:56 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 135ms (Views: 134.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:47:56 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:56 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:56 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:56 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:56 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:47:56 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:47:57 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:49:02 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 139ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:49:02 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:49:11 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[35mMainEntity Load (0.1ms)[0m  SELECT "main_entities".* FROM "main_entities"
+  Rendered main_entities/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 178ms (Views: 176.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:49:12 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:53:33 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 139ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:53:33 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:53:37 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[36mMainEntity Load (0.2ms)[0m  [1mSELECT "main_entities".* FROM "main_entities"[0m
+  Rendered main_entities/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 180ms (Views: 179.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:53:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:53:38 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:53:51 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:53:52 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:53:54 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[35mMainEntity Load (0.1ms)[0m  SELECT "main_entities".* FROM "main_entities"
+  Rendered main_entities/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 151ms (Views: 150.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:54:07 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 131ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:54:07 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:55:53 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 139ms (Views: 138.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:55:54 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:57:16 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 130ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:57:17 +0800
+
+
+Started GET "/settings/show" for ::1 at 2015-03-08 14:57:46 +0800
+Processing by SettingsController#show as HTML
+  Rendered settings/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 173ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides-c898afd34e65cf96cc891719e5c6da70.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/business_units-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/scaffolds-46b9ec5a9de19d6cf4b69650772ceec6.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/roles-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/dealers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/settings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/main_entities-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/application-d076e5d2ef0a0daaeb4c511deb2c153f.css?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/transition-49c071d4d736acca69daed5bd6c4fdbd.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/alert-4fa131fff2ae05a1d89df662cd4a8531.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/modal-d403efa7333c333fdeecc5daa727c437.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/dropdown-89b3696cc302eaf377aca640fae08632.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy-f3a0e91892e9edb7ccced4ed84ff23ec.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tab-fab339701c02e2cb7d02570dd26fcf10.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/tooltip-1727c885f6618bb619e6a29ef0496d11.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/popover-c19ae92999a32fa658ffe5d5cc13d195.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/button-dcd83af4b8aa46a9026dec4ea360a003.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/collapse-cfd6f6e5cff9c41e78cc52464a71358b.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/carousel-ac6115504ba6a31f58406c5978a6aa20.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap/affix-745457a96802e8f61e15a7622b54b68f.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/twitter/bootstrap-4a7c8463ef111cbe52eec5efe89f8319.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/bootstrap-91416daf9f05a6e9ca13ef54aa8dcb39.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/business_units-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/dealers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/main_entities-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/roles-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/settings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/assets/application-f581c8287f1cf1e1c17e3d82e3318a84.js?body=1" for ::1 at 2015-03-08 14:57:46 +0800
+
+
+Started GET "/main_entities" for ::1 at 2015-03-08 14:57:50 +0800
+Processing by MainEntitiesController#index as HTML
+  [1m[36mMainEntity Load (0.2ms)[0m  [1mSELECT "main_entities".* FROM "main_entities"[0m
+  Rendered main_entities/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 146ms (Views: 145.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dealers" for ::1 at 2015-03-08 14:57:54 +0800
+Processing by DealersController#index as HTML
+  [1m[35mDealer Load (0.5ms)[0m  SELECT "dealers".* FROM "dealers"
+  [1m[36mMainEntity Load (0.2ms)[0m  [1mSELECT  "main_entities".* FROM "main_entities" WHERE "main_entities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mMainEntity Load (0.1ms)[0m  SELECT  "main_entities".* FROM "main_entities" WHERE "main_entities"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "main_entities".* FROM "main_entities" WHERE "main_entities"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered dealers/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 181ms (Views: 178.2ms | ActiveRecord: 1.0ms)
