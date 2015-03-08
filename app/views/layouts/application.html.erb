@@ -29,7 +29,7 @@
         <li><a href="#">Board</a></li>
         <li><a href="#">Invoice</a></li>
         <li><a href="#">Report</a></li>
-        <li class="active"><a href="/main_entities">Settings</a></li>
+        <li class="active"><a href="/settings/show">Settings</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Log Out</a></li>
@@ -37,27 +37,6 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-<div class="columns">
-  <div id="side">
-    <ul class="nav nav-list">
-      <li class="nav-header">
-        Settings
-      </li>
-      <li class="active">
-        <a href="/main_entities">Main Entity</a>
-      </li>
-      <li>
-        <a href="/dealers">Dealer</a>
-      </li>
-      <li>
-        <a href="/business_units">Business Unit</a>
-      </li>
-    </ul>
-  </div>
-  <div id="main">
-    <%= yield %>
-  </div>
-</div>
+<%= yield %>
 </body>
 </html>

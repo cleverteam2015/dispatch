@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'settings/show'
+
+  resources :roles
+
   resources :business_units
 
   resources :dealers
