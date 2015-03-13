@@ -1,22 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Dispatch Service</title>
+  </head>
+  <body>
 
-<div class="columns">
-  <div id="side">
-    <ul class="nav nav-list">
-      <li class="nav-header">
-        Settings
-      </li>
-      <li class="active">
-        <a href="/main_entities">Main Entity</a>
-      </li>
-      <li>
-        <a href="/dealers">Dealer</a>
-      </li>
-      <li>
-        <a href="/business_units">Business Unit</a>
-      </li>
-    </ul>
-	</div>
-  <div id="main">
-    <%= yield %>
-  </div>
+    <!-- Top Menu -->
+    <%= render 'layouts/header' %>
+    
+    <div class="container-fluid">
+      <div class="row">
+        
+        <!-- Left Menu -->
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Settings</a></li>
+            <li><a href="/main_entities" target="main"  id="hreftext"><i class="fa fa-asterisk fa-fw"></i>&nbsp; Main Entities</a></li>
+            <li><a href="/dealers"  target="main"><i class="fa fa-cubes fa-fw"></i>&nbsp; Dealers</a></li>
+            <li><a href="/business_units"  target="main"><i class="fa fa-arrows-alt fa-fw"></i>&nbsp; Business Units</a></li>
+            <li><a href="/roles" target="main"><i class="fa fa-gavel fa-fw"></i>&nbsp;Roles</a></li>
+            <li><a href="/users" target="main"><i class="fa fa-user fa-fw"></i>&nbsp;Users</a></li>
+          </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <div id="content">
+              <iframe name="main" src="/main_entities" seamless width="1000" height="500" align="top" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+</html>
