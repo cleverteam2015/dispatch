@@ -27,7 +27,7 @@
         <td><%= business_unit.status %></td>
         <td><%= business_unit.address %></td>
         <td><%= business_unit.phone %></td>
-        <td><%= getBUName(business_unit.parent_id) %></td>
+        <td><%= getDealerName(business_unit.parent_id) %></td>
         <td><%=l business_unit.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
