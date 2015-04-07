@@ -1,0 +1,31 @@
+<% provide(:title, "Log in") %>
+
+
+
+<div class="row">
+  <div class="col-md-3 col-md-offset-4">
+    <h1>Log in</h1>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+    <% end %>
+
+    <%= form_for(:session, url: login_path) do |f| %>
+
+    <div class="input-group margin-bottom-sm">
+      <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+      <%= f.text_field :username, class: 'form-control', placeholder:'Username' %>
+    </div>
+    <div><br></div>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+      <%= f.password_field :password, class: 'form-control', placeholder:'Password' %>
+    </div>
+    <div><br></div>
+    <%= f.submit "Log in", class: "btn btn-primary" %>
+    
+    <% end %>
+
+
+    </div>
+</div>
+

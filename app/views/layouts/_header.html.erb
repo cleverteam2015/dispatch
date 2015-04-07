@@ -21,7 +21,14 @@
             <li class="active"><a href="/settings/show">Settings</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Log Out</a></li>
+            <li class="active"><a href="/business_units"  target="main">&nbsp; <i class="fa fa-user fa-lg"></i></a></li>
+            <li><%= link_to "Log out", logout_path, :method => :delete %></li>
+            
+
+
+
+
+            
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>
