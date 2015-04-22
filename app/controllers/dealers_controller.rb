@@ -5,6 +5,14 @@ class DealersController < ApplicationController
   # GET /dealers.json
   def index
     @dealers = Dealer.all
+    respond_to do |format|
+      format.html
+      format.pdf do 
+        pdf=DealerPdf.new(:page_layout => :landscape)
+        send_data pdf.render, filename: "csr.pdf", type: "application/pdf",
+                              disposition: "inline"
+      end  
+    end  
   end
 
   # GET /dealers/1

@@ -16,6 +16,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'twitter-bootstrap-rails'
 
+gem 'prawn'
+
+gem 'prawn-table'
+
 gem 'less-rails'
 
 gem 'therubyracer'
