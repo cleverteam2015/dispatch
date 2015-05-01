@@ -14,12 +14,3 @@
  *= require_self
  */
 
-#side {
-    width:200px;
-    float:left;
-    padding:5px;	      
-}
-#main {
-    float:left;
-    padding:5px;
-}

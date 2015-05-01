@@ -4,9 +4,7 @@
     <!-- Top Menu -->
     <%= render 'layouts/header' %>
     
-    <%= render 'layouts/sidemenu' %>
-
-    <div id="page-wrapper" class ="main">
+    <!-- %= render 'layouts/sidemenu' % -->
 
     <div class="page-header" id = "header">
       <h2><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h2>
@@ -16,9 +14,7 @@
                    new_main_entity_path %>            
       <br>
       <br>
-      <div class="table-responsive">
-
-      <table class="table table-hover table-striped">
+      <table class="table table-hover">
         <thead>
           <tr>
             <th><%= model_class.human_attribute_name(:name) %></th>
@@ -26,6 +22,7 @@
             <th><%= model_class.human_attribute_name(:creation_date) %></th>
             <th><%= model_class.human_attribute_name(:status) %></th>
             <th><%= model_class.human_attribute_name(:address) %></th>
+            <th><%= model_class.human_attribute_name(:created_at) %></th>
             <th><%=t '.actions', :default => t("helpers.actions") %></th>
           </tr>
         </thead>
@@ -37,6 +34,7 @@
               <td><%= main_entity.creation_date %></td>
               <td><%= main_entity.status %></td>
               <td><%= main_entity.address %></td>
+              <td><%=l main_entity.created_at %></td>
               <td>
                 <%= link_to content_tag(:i, '', :class => "fa fa-pencil fa-lg"),
                             edit_main_entity_path(main_entity) %>
@@ -48,8 +46,7 @@
           <% end %>
         </tbody>
       </table>
-    </div>  
 
-
+</div>
 
 
